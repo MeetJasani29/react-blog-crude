@@ -1,0 +1,200 @@
+a{
+    text-decoration: none !important;
+}
+header{
+    background-color: #e8e8e8;
+    padding: 15px 20px;
+   
+}
+header a{
+    color: black;
+}
+
+.blog-form{
+    background-image: url(https://images.pexels.com/photos/3378993/pexels-photo-3378993.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+.form-text label {
+    color: white       ;
+}
+.form-text input {
+    background: #ffffff99;
+    color: black;
+}
+.form-text input:focus{
+    background: #ffffff99;
+}
+.form-text select{
+    color: black;
+    background: #ffffff99;
+}
+
+.publish-button {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #589dc0d9;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #589dc0d9;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.publish-button span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.publish-button span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.publish-button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.publish-button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.publish-button:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* home */
+.card{
+    overflow: hidden;
+}
+.card-body{
+    padding: 0;
+}
+.card img{
+    width: 100%;
+    height: 200px   ;
+    border-radius: 5px;
+}
+.card h4{
+    font-size: 26px ;
+    line-height: 1.1;
+    text-align: start;
+    margin-top: 10px;
+}
+.card p{
+    color: rgba(0, 0, 0, .54) ;
+    font-size: 20px;
+    line-height: 1.1;
+   
+}
+.avatar{
+    margin-top: 20px;
+}
+.avatar-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: start;
+}
+.avatar-detail{
+    margin-left: 10px;
+}
+.avatar-detail a{
+    color: #0F730C !important;
+}
+.card-body{
+    text-align: start;
+}
+.card-btn {
+    position: absolute;
+    top: 20px;
+    right: -45px;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s linear;
+   
+    opacity: 0;
+}
+.card-btn button{
+    border: none;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #0000008c;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.card:hover .card-btn{
+    top: 20px;
+    right: 20px;
+    opacity: 1;
+}
+/* viewblog */
+.card2 {
+    width: 80%;               
+    max-width: 800px;         
+    margin: auto;            
+}
+.card-img-last {
+    margin-top: 40px;
+    width: 800px;
+    height: 550px;
+}
+.card-conten{
+    text-align: start;
+    margin-top: 20px;
+}
+.card-conten h4{
+    margin-bottom: 15px;
+}
+.card-title2{
+    text-align: start;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.card-conten p{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
+}
