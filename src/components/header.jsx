@@ -1,14 +1,22 @@
+
 import './blog.css'
 
-const Header = () => {
-        return(
+import { FaSearch } from 'react-icons/fa';
 
-            <header>
-                    <div className="d-flex justify-content-between ">
-                        <a href="/">Home</a>
-                        <a href="/blogform">Add a Blog</a>
-                    </div>
-            </header>
-        )
+const Header = () => {
+
+  
+    return (
+
+        <header>
+            <div className="d-flex justify-content-between ">
+                <div>
+                    <a href="/" className='me-4'>Home</a>
+                    <a href="/blogform">Add a Blog</a>
+                </div>
+               
+            </div>
+        </header>
+    )
 }
 export default Header;

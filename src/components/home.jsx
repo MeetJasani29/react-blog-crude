@@ -26,8 +26,13 @@ const Home = () => {
         navigate(`/viewblog/${id}`)
     }
 
+    
+
     return (
+
         <Row className="mt-5">
+   
+
             {blogs.map((blog) => (
 
                 <Col key={blog.id} className="col-4">
@@ -35,8 +40,8 @@ const Home = () => {
                         <div className="card position-relative">
                             <img src={blog.image} className="card-img-top" alt="..." />
                             <div className="card-btn d-flex justify-content-between p-3">
-                                <button  onClick={() => handleDelete(blog.id)}><MdDelete /></button>
-                                <button  onClick={() => handleEdit(blog.id)}><MdEdit /></button>
+                                <button onClick={() => handleDelete(blog.id)}><MdDelete /></button>
+                                <button onClick={() => handleEdit(blog.id)}><MdEdit /></button>
                                 <button onClick={() => handleView(blog.id)}><GrView /></button>
                             </div>
                             <div className="card-body">

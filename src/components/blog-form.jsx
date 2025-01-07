@@ -58,8 +58,8 @@ const Blogform = () => {
 
                 <Row className="mb-3">
                     <Form.Group className='form-text text-start mt-3 ' as={Col} controlId="formGridEmail">
-                        <Form.Label  >Name</Form.Label>
-                        <Form.Control type="text" name='image'   value={inputForm.name} onChange={handlechange}/>
+                        <Form.Label  >Author</Form.Label>
+                        <Form.Control type="text" name='fname'   value={inputForm.fname} onChange={handlechange}/>
                     </Form.Group>
                 </Row>
 
