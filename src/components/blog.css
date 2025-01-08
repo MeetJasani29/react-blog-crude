@@ -198,3 +198,15 @@ header a{
     font-weight: 400;
     font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
 }
+
+.Serachbtn Button{
+    background-color: black;
+    border: none;
+    padding: 5px 15px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.Serachbtn Button:hover{
+    background-color: black;
+    border: none;
+}
